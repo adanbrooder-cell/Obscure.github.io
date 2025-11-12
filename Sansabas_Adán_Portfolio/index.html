@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obscure - Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Obscure</div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">SOBRE  MÍ</a>
+                    <div class="underline"></div>
+                </li>
+                <li class="nav-item">
+                    <a href="#creations" class="nav-link">CREACIONES</a>
+                    <div class="underline"></div>
+                    <div class="dropdown nav-dropdown">
+                        <div class="dropdown-content nav-dropdown-content">
+                            <label for="slide1" class="dropdown-item">Always by my Side</label>
+                            <label for="slide2" class="dropdown-item">In my Deepest Dreams</label>
+                            <label for="slide3" class="dropdown-item">There, Near the Forest</label>
+                            <label for="slide4" class="dropdown-item">The Monster</label>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#pandas" class="nav-link">PANDAS</a>
+                    <div class="underline"></div>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">CONTACTO</a>
+                    <div class="underline"></div>
+                    <div class="dropdown nav-dropdown">
+                        <div class="dropdown-content nav-dropdown-content">
+                            <a href="https://instagram.com/Nocthium" target="_blank" class="dropdown-item"><i class="fab fa-instagram"></i> Instagram</a>
+                            <a href="#" class="dropdown-item"><i class="fab fa-discord"></i> Discord</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="animated-bg">
+            <div class="orb orb1"></div>
+            <div class="orb orb2"></div>
+            <div class="orb orb3"></div>
+            <div class="orb orb4"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title" id="obscure-title">
+                <span class="letter">O</span>
+                <span class="letter">b</span>
+                <span class="letter">s</span>
+                <span class="letter">c</span>
+                <span class="letter">u</span>
+                <span class="letter">r</span>
+                <span class="letter">e</span>
+            </h1>
+            <div class="hero-title-reflection">
+                <span class="letter">O</span>
+                <span class="letter">b</span>
+                <span class="letter">s</span>
+                <span class="letter">c</span>
+                <span class="letter">u</span>
+                <span class="letter">r</span>
+                <span class="letter">e</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="about" id="about">
+        <div class="section-container">
+            <h2 class="interactive-title">Sobre  Mí</h2>
+            <div class="about-content">
+                <p>Soy un artista digital especializado en manipulación de imágenes y diseño en Photoshop. Se me da muy bien todo el tema de la manipulación de imagen y el crear imágenes de mundos fantasiosos. Siempre que hago una imagen, me gusta darle un toque de fantasía pero con un toque lúgubre y depresivo. Intento buscar esa parte oscura en la fantasía e ir contrastando entre los dos mundos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="creations" id="creations">
+        <div class="section-container">
+            <h2 class="interactive-title">Creaciones</h2>
+            <div class="carousel-container">
+                <input type="radio" name="carousel" id="slide1" class="carousel-radio" checked>
+                <input type="radio" name="carousel" id="slide2" class="carousel-radio">
+                <input type="radio" name="carousel" id="slide3" class="carousel-radio">
+                <input type="radio" name="carousel" id="slide4" class="carousel-radio">
+                
+                <label for="slide4" class="carousel-btn prev" data-slide="1">❮</label>
+                <label for="slide1" class="carousel-btn prev" data-slide="2">❮</label>
+                <label for="slide2" class="carousel-btn prev" data-slide="3">❮</label>
+                <label for="slide3" class="carousel-btn prev" data-slide="4">❮</label>
+                
+                <div class="gallery-carousel">
+                    <div class="carousel-slide">
+                        <a href="#lightbox-creation1" class="gallery-item" data-category="always">
+                            <img src="./Imágenes/upscalemedia-transformed.jpeg" alt="Always by my Side">
+                            <div class="image-overlay">
+                                <h3 class="overlay-title">Always by my Side</h3>
+                                <p>Esta fue mi primera obra. Personalmente es mi favorita, ya que la cree justo después del fallecimiento de mi hijo de 4 patas. Simpre a mi lado.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-slide">
+                        <a href="#lightbox-creation3" class="gallery-item" data-category="dreams">
+                            <img src="./Imágenes/upscalemedia-transformed (2).jpeg" alt="There, Near the Forest">
+                            <div class="image-overlay">
+                                <h3 class="overlay-title">There, Near the Forest</h3>
+                                <p>Este edit pasó por muchas variaciones antes del diseño final. Antes de ser una mujer durmiendo en el fondo del mar, iba a ser una sirena en una roca por la noche, luego una sirena fuera del agua junto a un lobo negro, hasta que al final, opté por una mujer soñando debajo del agua. Personalmente me encanta el resultado.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-slide">
+                        <a href="#lightbox-creation2" class="gallery-item" data-category="forest">
+                            <img src="./Imágenes/upscalemedia-transformed (1).jpeg" alt="In my Deepest Dreams">
+                            <div class="image-overlay">
+                                <h3 class="overlay-title">In my Deepest Dreams</h3>
+                                <p>En esta imagen quise poner un elemento precioso  a la vez que majestuoso y hermoso. Se me ocurrió la idea de un león, ya que quería hacerle este edit a mi hermana, a la cuál le encantan estos animales, pero no quise perder el estilo que, bajo mi punto de vista creo que me caracteriza.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-slide">
+                        <a href="#lightbox-creation4" class="gallery-item" data-category="monster">
+                            <img src="./Imágenes/The Monster (1).jpg" alt="The Monster">
+                            <div class="image-overlay">
+                                <h3 class="overlay-title">The Monster</h3>
+                                <p>Qué interesante... Esta imagen la extraje de una continua pesadilla que tenía de pequeño. En esta pesadilla soñaba que era perseguido por un mosntruo de 6 patas por un pasillo interminable. Qué curioso, jamás llegué a ver la cara del monstruo...</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <label for="slide2" class="carousel-btn next" data-slide="1">❯</label>
+                <label for="slide3" class="carousel-btn next" data-slide="2">❯</label>
+                <label for="slide4" class="carousel-btn next" data-slide="3">❯</label>
+                <label for="slide1" class="carousel-btn next" data-slide="4">❯</label>
+                
+                <div class="carousel-indicators">
+                    <label for="slide1" class="indicator" data-slide="1"></label>
+                    <label for="slide2" class="indicator" data-slide="2"></label>
+                    <label for="slide3" class="indicator" data-slide="3"></label>
+                    <label for="slide4" class="indicator" data-slide="4"></label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="lightbox-creation1" class="lightbox">
+        <div class="lightbox-container">
+            <span class="lightbox-close">&times;</span>
+            <img src="./Imágenes/upscalemedia-transformed.jpeg" alt="Creación 1">
+        </div>
+    </div>
+    <div id="lightbox-creation2" class="lightbox">
+        <div class="lightbox-container">
+            <span class="lightbox-close">&times;</span>
+            <img src="./Imágenes/upscalemedia-transformed (1).jpeg" alt="Creación 2">
+        </div>
+    </div>
+    <div id="lightbox-creation3" class="lightbox">
+        <div class="lightbox-container">
+            <span class="lightbox-close">&times;</span>
+            <img src="./Imágenes/upscalemedia-transformed (2).jpeg" alt="Creación 3">
+        </div>
+    </div>
+    <div id="lightbox-creation4" class="lightbox">
+        <div class="lightbox-container">
+            <span class="lightbox-close">&times;</span>
+            <img src="./Imágenes/The Monster (1).jpg" alt="The Monster">
+        </div>
+    </div>
+
+    <section class="pandas" id="pandas">
+        <div class="pandas-bg-animation">
+            <img src="./Imágenes/Adobe Express - file.png" class="falling-logo" alt="">
+            <img src="./Imágenes/Adobe Express - file.png" class="falling-logo" alt="">
+            <img src="./Imágenes/Adobe Express - file.png" class="falling-logo" alt="">
+            <img src="./Imágenes/Adobe Express - file.png" class="falling-logo" alt="">
+            <img src="./Imágenes/Adobe Express - file.png" class="falling-logo" alt="">
+            <img src="./Imágenes/Adobe Express - file.png" class="falling-logo" alt="">
+            <img src="./Imágenes/Adobe Express - file.png" class="falling-logo" alt="">
+            <img src="./Imágenes/Adobe Express - file.png" class="falling-logo" alt="">
+        </div>
+        <div class="section-container">
+            <div class="pandas-logo-container">
+                <img src="./Imágenes/Adobe Express - file.png" alt="Pandas Logo" class="pandas-logo">
+            </div>
+            
+            <div class="pandas-sections">
+                <div class="pandas-section" id="pandas-hombre">
+                    <h3 class="pandas-section-title">Hombre</h3>
+                    <div class="pandas-gallery">
+                        <div class="pandas-item">
+                            <img src="./Imágenes/Hombre 1.png" alt="Pandas Hombre 1">
+                        </div>
+                        <div class="pandas-item">
+                            <img src="./Imágenes/Hombre 2.png" alt="Pandas Hombre 2">
+                        </div>
+                        <div class="pandas-item">
+                            <img src="./Imágenes/Hombre 3.png" alt="Pandas Hombre 3">
+                        </div>
+                        <div class="pandas-item">
+                            <img src="./Imágenes/Hombre 4.png" alt="Pandas Hombre 4">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pandas-section" id="pandas-mujer">
+                    <h3 class="pandas-section-title">Mujer</h3>
+                    <div class="pandas-gallery">
+                        <div class="pandas-item">
+                            <img src="./Imágenes/Mujer 1.png" alt="Pandas Mujer 1">
+                        </div>
+                        <div class="pandas-item">
+                            <img src="./Imágenes/Mujer 2.png" alt="Pandas Mujer 2">
+                        </div>
+                        <div class="pandas-item">
+                            <img src="./Imágenes/Mujer 3.png" alt="Pandas Mujer 3">
+                        </div>
+                        <div class="pandas-item">
+                            <img src="./Imágenes/Mujer 4.png" alt="Pandas Mujer 4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="section-container">
+            <h2 class="interactive-title">Contacto</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Tu nombre" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Tu email" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Tu mensaje" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Enviar Mensaje</button>
+            </form>
+            <div class="social-links">
+                <p>O encuéntrame en:</p>
+                <a href="https://instagram.com/Nocthium" target="_blank" class="social-link"><i class="fab fa-instagram"></i> Instagram</a>
+                <span class="social-link" style="cursor: pointer;"><i class="fab fa-discord"></i> Discord</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="back-to-top">
+        <a href="#home" class="btn-back-to-top">↑ VOLVER AL INICIO</a>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Obscure. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        const heroTitle = document.querySelector('.hero-title');
+        const heroTitleReflection = document.querySelector('.hero-title-reflection');
+        const letters = document.querySelectorAll('.hero-title .letter');
+        const reflectionLetters = document.querySelectorAll('.hero-title-reflection .letter');
+        const touchedLetters = new Set();
+        let previousTouched = new Set();
+
+        letters.forEach(letter => {
+            letter.style.opacity = '1';
+        });
+
+        reflectionLetters.forEach(letter => {
+            letter.style.opacity = '0';
+        });
+
+        heroTitle.addEventListener('mousemove', (e) => {
+            heroTitle.classList.remove('hint');
+            const titleRect = heroTitle.getBoundingClientRect();
+            const mouseX = e.clientX - titleRect.left;
+            const threshold = 60;
+
+            letters.forEach((letter, index) => {
+                const letterRect = letter.getBoundingClientRect();
+                const letterCenterX = letterRect.left - titleRect.left + letterRect.width / 2;
+                const distance = Math.abs(mouseX - letterCenterX);
+
+                if (distance < threshold) {
+                    touchedLetters.add(index);
+                    letter.style.transitionDelay = '0s';
+                    letter.style.opacity = '1';
+                    reflectionLetters[index].style.transitionDelay = '0s';
+                    reflectionLetters[index].style.opacity = '0.2';
+                } else {
+                    if (previousTouched.has(index)) {
+                        letter.style.transitionDelay = '0.2s';
+                        reflectionLetters[index].style.transitionDelay = '0s';
+                    } else {
+                        letter.style.transitionDelay = '0s';
+                        reflectionLetters[index].style.transitionDelay = '0s';
+                    }
+                    letter.style.opacity = '0.3';
+                    reflectionLetters[index].style.opacity = '0.08';
+                }
+            });
+
+            previousTouched = new Set(touchedLetters);
+        });
+
+        heroTitle.addEventListener('mouseleave', () => {
+            letters.forEach((letter, index) => {
+                letter.style.transitionDelay = '0.2s';
+                letter.style.opacity = '1';
+                reflectionLetters[index].style.transitionDelay = '0s';
+                reflectionLetters[index].style.opacity = '0';
+            });
+            touchedLetters.clear();
+            previousTouched.clear();
+            setTimeout(() => {
+                heroTitle.classList.add('hint');
+            }, 1000);
+        });
+
+        function syncReflectionOpacity() {
+            letters.forEach((letter, index) => {
+                const currentOpacity = parseFloat(window.getComputedStyle(letter).opacity);
+                const reflectionOpacity = Math.max(0, (currentOpacity - 0.3) / 0.7 * 0.2);
+                reflectionLetters[index].style.opacity = reflectionOpacity.toString();
+            });
+            requestAnimationFrame(syncReflectionOpacity);
+        }
+
+        syncReflectionOpacity();
+
+        setTimeout(() => {
+            heroTitle.classList.add('hint');
+        }, 2000);
+
+        document.querySelectorAll('.dropdown-item').forEach(item => {
+            if (item.getAttribute('for')) {
+                item.addEventListener('click', () => {
+                    document.getElementById('creations').scrollIntoView({ behavior: 'smooth' });
+                });
+            }
+        });
+
+        const revealObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('reveal-visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('section').forEach(section => {
+            revealObserver.observe(section);
+        });
+
+        const carouselRadios = document.querySelectorAll('.carousel-radio');
+        const galleryCarousel = document.querySelector('.gallery-carousel');
+        let currentSlide = 0;
+        let carouselInterval;
+
+        function startCarousel() {
+            stopCarousel();
+            carouselInterval = setInterval(() => {
+                currentSlide = (currentSlide + 1) % carouselRadios.length;
+                carouselRadios[currentSlide].checked = true;
+            }, 6000);
+        }
+
+        function stopCarousel() {
+            clearInterval(carouselInterval);
+        }
+
+        function resetCarousel() {
+            carouselRadios.forEach((radio, index) => {
+                if (radio.checked) {
+                    currentSlide = index;
+                }
+            });
+            startCarousel();
+        }
+
+        galleryCarousel.addEventListener('mouseenter', stopCarousel);
+        galleryCarousel.addEventListener('mouseleave', startCarousel);
+
+        document.querySelectorAll('.carousel-btn').forEach(btn => {
+            btn.addEventListener('click', resetCarousel);
+        });
+
+        document.querySelectorAll('.indicator').forEach(indicator => {
+            indicator.addEventListener('click', resetCarousel);
+        });
+
+        startCarousel();
+
+        let scrollPosition = 0;
+
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('click', (e) => {
+                e.preventDefault();
+                scrollPosition = window.scrollY;
+                const lightboxId = item.getAttribute('href').substring(1);
+                document.getElementById(lightboxId).style.display = 'flex';
+            });
+        });
+
+        document.querySelectorAll('.lightbox').forEach(lightbox => {
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox || e.target.classList.contains('lightbox-close')) {
+                    lightbox.style.display = 'none';
+                }
+            });
+        });
+
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                document.querySelectorAll('.lightbox').forEach(lightbox => {
+                    if (lightbox.style.display === 'flex') {
+                        lightbox.style.display = 'none';
+                    }
+                });
+            }
+        });
+
+        if (history.scrollRestoration) {
+            history.scrollRestoration = 'manual';
+        }
+
+        window.addEventListener('beforeunload', () => {
+            window.scrollTo(0, 0);
+        });
+
+        document.querySelectorAll('.pandas-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const imgSrc = item.querySelector('img').src;
+                const lightbox = document.createElement('div');
+                lightbox.className = 'pandas-lightbox';
+                lightbox.innerHTML = `
+                    <div style="position: relative; display: inline-block;">
+                        <img src="${imgSrc}" class="pandas-lightbox-img">
+                        <span class="pandas-lightbox-close">&times;</span>
+                    </div>
+                `;
+                document.body.appendChild(lightbox);
+                
+                setTimeout(() => {
+                    lightbox.classList.add('active');
+                }, 10);
+                
+                lightbox.addEventListener('click', (e) => {
+                    if (e.target === lightbox || e.target.classList.contains('pandas-lightbox-close')) {
+                        lightbox.classList.remove('active');
+                        setTimeout(() => {
+                            lightbox.remove();
+                        }, 300);
+                    }
+                });
+            });
+        });
+
+    </script>
+</body>
+</html>
